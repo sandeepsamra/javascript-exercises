@@ -1,0 +1,32 @@
+<input type="text" name="text1">
+<br/>
+<input type="text" name="text2">
+
+<!--
+
+ANSWERS TO QUESTIONS
+
+TYPING INTO A BOX
+
+1. When your cursor is in the input and you press the SHIFT key, what events get triggered? Is keypress one of them? Why or why not?
+  - keypress didn't fire when shift key was pressed because keypress only fires if you enter character into text field
+
+2. Holding down the SHIFT key and the pressing the A key, what event fire?
+  - 'shift + A' fires textInput because value of element changed
+
+3. How does the event object passed to the callback for the keyboard events differ between pressing the A key by itself and with the SHIFT key pressed down.
+  - text event vs. keyboard
+
+4. With some text already in the box, press the DELETE/BACKSPACE key to delete a character. Do you expect the events to be the same as or different from the examples above?
+  - similar to when I pressed 'shift + A' because value of element changed (input event)
+
+NAVIGATING BETWEEN ELEMENTS
+
+1. Add another input to the page. Now place your cursor in one of them and press the TAB key. The cursor should go to the other input. Which events get fired and in what order when you press the TAB key? Are those all the events you were expecting?
+  - keydown, keyup events are fired
+
+2. Next try clicking from one input to another. With one input in focus, click the other input. Which events are the same as the above example and which differ?
+  - click, mouseout, mousemove, mouseout, mousedown, mouseup, click
+
+-->
+
